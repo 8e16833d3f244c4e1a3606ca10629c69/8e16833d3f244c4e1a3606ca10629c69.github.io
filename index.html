@@ -29,7 +29,7 @@ function CreateSaveButtonClick()
 	
 	ClearStatus();
 	ShowStatus("info", appVersion);
-	ShowStatus("info", singleUrlMessage);
+	//ShowStatus("info", singleUrlMessage);
 
 	var options = {
     files: [        
@@ -504,7 +504,7 @@ body, input, textarea, select, button, .normal {
 }
 </style>
 
-<body topmargin="0" style="margin-left:0px; margin-right:0px;" onload="ShowNewDownloadPage(); ShowStatus('info', 'Save2Dropbox Version 1.0.0.1');">
+<body topmargin="0" style="margin-left:0px; margin-right:0px;" onload="ShowNewDownloadPage(); ShowStatus('info', 'Save2Dropbox Version 1.0.0.2'); ShowStatus('info', 'Multiple Url is not supported. Please use one Url at a time.');">
 <title>Save2Dropbox</title>
 
 <header class="mast-head">
