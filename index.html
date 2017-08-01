@@ -11,6 +11,7 @@ Please don't copy, upload, download or share this content unless you have the ri
 
 var appVersion = "Save2Dropbox Version 1.0.0.2";
 var infoMessage = "Send us your feedback at <u>save2dropbox@consultant.com</u>";
+var singleUrlMessage = "Multiple Url is not supported. Please use one Url at a time.";
 
 function CreateSaveButtonClick()
 {
@@ -96,7 +97,7 @@ function NewDownloadClick()
 	CreateSaveButton();
 	ClearStatus();
 	ShowStatus("info", appVersion);
-	//ShowStatus("info", infoMessage);
+	ShowStatus("info", singleUrlMessage);
 }
 
 function CreateSaveButton()
@@ -527,7 +528,7 @@ body, input, textarea, select, button, .normal {
 <center>
 <br/>
 <div id="container" style="background-color:transparent; max-height:26px; height:26px; line-height:21px;">
-<input type="button" value="New Save" class="buttoninput" onclick="NewDownloadClick()" style="margin-right:5px;"/><input type="button" value="Create Save Button" onclick="CreateSaveButtonClick()" class="buttoninput"/>
+<input type="button" value="New Save" class="buttoninput" onclick="NewDownloadClick()" style="margin-right:5px;"/><input type="button" value="Generate Save Button" onclick="CreateSaveButtonClick()" class="buttoninput"/>
 </div>
 </center>
 </td></tr>
